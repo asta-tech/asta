@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASTA.group</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/vuetify@3.1.12/dist/vuetify.css" rel="stylesheet">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+</head>
+
+<body>
+    <div id="app">
+        <v-app id="inspire">
+            <v-navigation-drawer v-model="drawer" app temporary>
+                <p class="text-center mt-13">最終更新 2023-05-15</p>
+            </v-navigation-drawer>
+
+            <v-app-bar flat app>
+                <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+                <v-toolbar-title>ASTA.group</v-toolbar-title>
+                <div class='foo' style='margin-left: auto;'>
+                </div>
+            </v-app-bar>
+
+            <v-main><v-container>
+                <v-card elevation="12" class="py-2 mb-4" style="border-top: 5px solid rgba(0, 81, 255, 0.767) !important">
+                    <v-card-title style="white-space: normal!important; word-break: keep-all;"><h2>ASTA.groupへようこそ</h2></v-card-title>
+                    <v-row dense>
+                        <v-col cols="12" xs="12" sm="12" md="8" lg="8" xl="8"><v-card-text>ASTA.groupはASTA情報班が運用しています。</v-card-text></v-col>
+                        <v-col cols="12" xs="12" sm="12" md="4" lg="4" xl="4"><v-img src="qr.png" style="margin: 0 0 0 auto; position: relative; bottom: 0;" width="20%" min-width="150px"></v-img></v-col>
+                    </v-row>
+                </v-card>
+                <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(31, 199, 255)">
+                    <v-card-title>ASTAとは？</v-card-title>
+                    <v-card-text>ASTAは科学技術に関する学びを生徒自らが深めていく自治学習コミュニティーです。学年を超えた仲間とともに考え、刺激を受けサイエンスを楽しみながら、科学の甲子園や、各種オリンピックに挑戦しています。（本校HPより引用）</v-card-text>
+                </v-card>
+                <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(31, 199, 255)">
+                    <v-card-title>情報班について</v-card-title>
+                    <v-card-text>
+                        情報班では日々パソコン等を活用して様々な活動を実施しています。
+                        <v-row dense class="mt-2">
+                            <v-col cols="6" xs="6" sm="4" md="3" lg="3" xl="3">
+                                <v-card elevation="3" class="mx-auto" max-width="344" href="https://webmap.asta.group" height="100%" style="position: relative; padding-bottom: 50px; border-top: 5px solid rgb(255, 0, 255)">
+                                  <v-card-item><div>
+                                    <div class="text-h6 mb-1">Webプログラミング（校内ウェブマップ）</div>
+                                    <div class="text-caption">校内地図を見やすく使いやすいウェブアプリ化しました。<span class="text-red text-bold">現在公開中！</span></div>
+                                  </div></v-card-item>
+                                  <v-card-actions style="position: absolute; bottom: 0;"><v-btn variant="outlined">今すぐアクセス！</v-btn></v-card-actions>
+                                </v-card>
+                            </v-col>
+                            <v-col cols="6" xs="6" sm="4" md="3" lg="3" xl="3">
+                                <v-card elevation="3" class="mx-auto" max-width="344" href="https://games.asta.group" height="100%" style="position: relative; padding-bottom: 50px; border-top: 5px solid rgb(255, 0, 255)">
+                                  <v-card-item><div>
+                                    <div class="text-h6 mb-1">ゲームプログラミング</div>
+                                    <div class="text-caption">多種多様なゲームを作っています。<span class="text-red text-bold">現在一部作品を公開中！</span>（一部PC推奨）</div>
+                                  </div></v-card-item>
+                                  <v-card-actions style="position: absolute; bottom: 0;"><v-btn variant="outlined">今すぐアクセス！</v-btn></v-card-actions>
+                                </v-card>
+                            </v-col>
+                            <v-col cols="6" xs="6" sm="4" md="3" lg="3" xl="3">
+                                <v-card class="mx-auto" max-width="344" href="#" height="100%" style="position: relative; padding-bottom: 50px; border-top: 3px solid rgb(139, 144, 146)">
+                                  <v-card-item><div>
+                                    <div class="text-h6 mb-1">情報オリンピック参加</div>
+                                    <div class="text-caption">メンバーのほぼ全員が毎年情報オリンピックに挑戦しています。</div>
+                                  </div></v-card-item>
+                                  <!--v-card-actions style="position: absolute; bottom: 0;"><v-btn variant="outlined">詳細</v-btn></v-card-actions-->
+                                </v-card>
+                            </v-col>
+                            <v-col cols="6" xs="6" sm="4" md="3" lg="3" xl="3">
+                                <v-card class="mx-auto" max-width="344" href="#" height="100%" style="position: relative; padding-bottom: 50px; border-top: 3px solid rgb(139, 144, 146)">
+                                  <v-card-item><div>
+                                    <div class="text-h6 mb-1">電子工作</div>
+                                    <div class="text-caption">ASTAクイズ班の早押し回答ボタンなどの製作も行っています。</div>
+                                  </div></v-card-item>
+                                  <!--v-card-actions style="position: absolute; bottom: 0;"><v-btn variant="outlined">詳細</v-btn></v-card-actions-->
+                                </v-card>
+                            </v-col>
+                            <v-col cols="6" xs="6" sm="4" md="3" lg="3" xl="3">
+                                <v-card class="mx-auto" max-width="344" href="#" height="100%" style="position: relative; padding-bottom: 50px; border-top: 3px solid rgb(139, 144, 146)">
+                                  <v-card-item><div>
+                                    <div class="text-h6 mb-1">データサイエンス</div>
+                                    <div class="text-caption">近年話題のデータサイエンスにも取り組んでいます。</div>
+                                  </div></v-card-item>
+                                  <!--v-card-actions style="position: absolute; bottom: 0;"><v-btn variant="outlined">詳細</v-btn></v-card-actions-->
+                                </v-card>
+                            </v-col>
+                        </v-row>
+                    </v-card-text>
+                </v-card>
+            </v-container></v-main>
+        </v-app>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuetify@3.1.12/dist/vuetify.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
