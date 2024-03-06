@@ -1,2 +1,2 @@
-# ASTA.group
-https://ASTA.group
+# ASTA.group アーカイブ
+~~https://ASTA.group~~ https://asta.bosshii.com
